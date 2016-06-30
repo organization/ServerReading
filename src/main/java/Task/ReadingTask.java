@@ -8,10 +8,8 @@ import me.onebone.economyapi.EconomyAPI;
 
 public class ReadingTask extends PluginTask<ServerReading> {
 
-	public ReadingTask(ServerReading plugin// ,Player player
-	) {
+	public ReadingTask(ServerReading plugin) {
 		super(plugin);
-		// this.player = player;
 	}
 
 	@Override
