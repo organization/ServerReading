@@ -1,5 +1,0 @@
-name: ServerReading
-main: ServerReading.ServerReading
-author: nexus
-version: 1.0.0-SNAPSHOT
-api: ["1.0.0"]
