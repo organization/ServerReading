@@ -27,7 +27,7 @@ public class ReadingTask extends PluginTask<ServerReading> {
 			Item item = player.getInventory().getItemInHand();
 			
 			
-			player.sendPopup(TextFormat.GOLD + "[ Player View ] \n" + TextFormat.GOLD + "[ Name ]  : " + Name
+			player.sendTip(TextFormat.GOLD + "[ Player View ] \n" + TextFormat.GOLD + "[ Name ]  : " + Name
 					+ "\n" + TextFormat.GOLD + "[ MyMoney ]  : " + UserMoney + "   [ ServerUser ]  : " + ServerPlayers
 					+ " / " + MaxSize + "\n" + TextFormat.GOLD + "[ HP / HandItem ]  : " + Hp + " / " + MaxHp + " , " + item);
 		}
