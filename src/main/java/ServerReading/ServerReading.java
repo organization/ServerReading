@@ -11,7 +11,7 @@ public class ServerReading extends PluginBase implements Listener {
 	public void onEnable() {
 		this.getLogger().info("ServerReading플러그인 활성화!");
 		this.getServer().getPluginManager().registerEvents(this, this);
-		this.getServer().getScheduler().scheduleRepeatingTask(new ReadingTask(this), 15);
+		this.getServer().getScheduler().scheduleRepeatingTask(new ReadingTask(this), 40);
 	}
 
 }
