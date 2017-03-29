@@ -6,6 +6,39 @@
  	<version>1.0.0-SNAPSHOT</version>
  	<name>ServerReading</name>
  
+package filghtmoney;
+
+import java.util.LinkedHashMap;
+
+import cn.nukkit.Player;
+import cn.nukkit.event.EventHandler;
+import cn.nukkit.event.Listener;
+import cn.nukkit.event.entity.EntityDamageByEntityEvent;
+import cn.nukkit.event.entity.EntityDamageEvent;
+import cn.nukkit.plugin.PluginBase;
+
+public class Main extends PluginBase implements Listener {
+	public static LinkedHashMap<Player, Attact> datas = new LinkedHashMap<>();
+
+	@Override
+	public void onEnable() {
+		this.getServer().getPluginManager().registerEvents(this, this);
+		
+	}
+
+	@EventHandler
+	public void onFilght(EntityDamageEvent event) {
+		if (event.getCause() == EntityDamageEvent.CAUSE_ENTITY_ATTACK) {
+			EntityDamageByEntityEvent event1 = (EntityDamageByEntityEvent) event;
+			if (event1.getDamager() instanceof Player && event1.getEntity() instanceof Player) {
+				Player attact = (Player) event1.getEntity();
+				Player damager = (Player) event1.getDamager();
+			}
+
+		}
+	}
+
+}
 
 
 
